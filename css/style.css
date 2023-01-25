@@ -1,0 +1,342 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #fff;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+	
+}
+
+.logo {
+    position: absolute;
+    height: 68px;
+    left: 100px;
+    top: 50px;
+	
+}
+
+._logotitle {
+    position: absolute;
+    height: 50px;
+    left: 220px;
+	top: 40px;
+    color: #0A3871;
+    font-weight: bold ;
+		
+}
+
+
+.encrypter{
+    margin: 0 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+	
+}
+
+._formencrypter{
+    flex-basis: calc(65% - 80px);
+	
+}
+
+._txtarea{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	
+}
+
+#text{
+    
+	flex-basis: 100%;
+    margin-top: 168px;
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 48px;
+    color:#0A3871;
+    background-color: #f0f0f0;
+    resize: none;
+    border-radius: 15px
+	
+}
+
+
+#text:focus{
+    outline: none
+}
+
+#text::placeholder {
+    color: #0A3871;
+}
+
+.txtinf{
+    width: 100%;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 16px 60px;
+}
+
+.info img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.info p {
+    margin-left: 8px;
+    display: inline-block;
+    color: #3d3d3d;
+	
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+._btnencrypter {
+    padding: 15px;
+    position: relative;
+    width: 40%;
+    background: #72228f;
+    border-radius: 10px ;
+    border: 2px solid #000000;
+	color: #fff;
+	font-style: italic;
+	text-decoration: underline overline white;
+	font-weight: bold;
+}
+._btnencrypter img {
+    position: relative;
+    width: 30px;
+    top: 0px;
+}
+._btnencrypter:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+._btnencrypter:active {
+    background: #510871;
+}
+._btndecrypt {
+	
+    padding: 15px;
+    position: relative;
+    margin-left: 30px;
+    width: 40%;
+    background: #24ed34;
+    border-radius: 10px ;
+    border: 2px solid #000000;
+    color: #000000;
+	font-style: italic;
+	text-decoration: underline overline black;
+	font-weight: bold;
+}
+._btndecrypt img {
+    position: relative;
+    width: 30px;
+    top: 0px;
+
+}
+
+._btndecrypt:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+._btndecrypt:active {
+    background: #249a13;
+    
+}
+.output {
+    height: 730px;
+    width: 100%;
+    margin: 40px 40px;
+    flex-basis: calc(40% - 80px);
+}
+
+._resultcontainer {
+    width: 70%;
+    min-width: 200px;
+    height: 100%;
+    background: #c83df2;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+	color: #fff;
+	border: 1px solid #000000;
+	
+ }
+
+ 
+ ._imgencryptlogo {
+    width: 180px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+._imgencryptlogo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    filter: saturate(70%);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+	
+}
+
+._resultcontainer p:nth-child(2) {
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+._resultcontainer p:nth-child(3) {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#outputtxt {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    right: 25px;
+    height: 75%;
+    resize: none;
+    background: transparent;
+	color: #fff;
+	border: 1px;
+	
+}
+
+.content button {
+    position: absolute;
+    bottom: 50px;
+    padding: 20px;
+    position: relative;
+    top: 90px;
+    width: 80%;
+    background: #fff;
+    border-radius: 25px ;
+	border: 2px solid #0A3871;
+    color: #000000;
+    visibility: hidden;
+}
+
+.content button:active{
+    transform: scale(0.9);
+}
+
+#copytoclipboard img {
+    position: relative;
+    width: 30px;
+    top: 2px; 
+    right: 10px;
+}
+
+
+footer {
+    padding: 20px;
+    
+}
+
+.Owner {
+    color: #052751;
+    font-size: 17px;
+    margin: 80px;
+    font-weight: 600;
+	text-align: left;
+}
+
+.Owner a {
+    text-decoration: underline;
+    font-style: italic;
+    color: #000000;
+	
+}
+
+.Owner a:hover {
+    color: #10eb52;
+}
+
+@media screen and (max-width: 860px){
+    
+    .encrypter {
+        margin: 0;
+    }
+
+    ._txtarea{
+        height: 600px;
+    }
+    .info p {
+        font-size: 12px;
+		
+    }
+
+    .output {
+        height: 100%;
+        
+    }
+
+    ._resultcontainer {
+        width: 550px;
+    }
+
+    ._imgencryptlogo {
+        display: none;
+    }
+
+    .content button {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #text {
+        font-size: 25px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ._btnencrypter {
+        width: 80%;
+    }
+    ._btndecrypt {
+        width: 80%;
+        margin: 0;
+    }
+
+    ._resultcontainer {
+        width: 320px;
+    }
+}
+
